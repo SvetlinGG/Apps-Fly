@@ -7,20 +7,33 @@ body {
 .middle-container{
     display: flex;
     align-items: center;
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
     background-color: lightgrey;
     box-shadow: 20px 5px 20px gray;
-    margin: 200px 0 0 500px;
+    margin: 200px 0 0 700px;
+    background: linear-gradient(to bottom, rgb(89, 92, 252), rgb(226, 57, 241));
+    animation: rotate 1s infinite linear;
 }
+/* @keyframes rotate {
+
+    100% {
+      transform: rotate(360deg);
+    }
+  } */
 .panel{
-    
+    /* background-color: white;
+    opacity: 0.8;
+    border-radius: 10px;
+    background-color: rgb(180, 180, 180);
+    box-shadow: 20px 5px 20px gray; */
 }
-div img{
+.img{
     background-color: white;
     opacity: 0.8;
     border-radius: 10px;
     background-color: rgb(180, 180, 180);
     box-shadow: 20px 5px 20px gray;
 }
+
