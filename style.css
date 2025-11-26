@@ -26,8 +26,8 @@ body {
   );
   mask: radial-gradient(
     circle,
-    transparent 100px,   /* 120px diameter → radius = 60px */
-    black 62px          /* soft edge for a clean ring cut */
+    transparent 100px,   
+    black 62px          
   );
 }
 
@@ -40,5 +40,6 @@ body {
     border-radius: 10px;
     background-color: rgb(180, 180, 180);
     box-shadow: 20px 5px 20px gray;
+    
 }
 
