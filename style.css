@@ -11,11 +11,26 @@ body {
     width: 400px;
     border-radius: 50%;
     background-color: lightgrey;
-    box-shadow: 20px 5px 20px gray;
+    /* box-shadow: 20px 5px 20px gray; */
+    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94, 104, 121, 0.137);
     margin: 200px 0 0 700px;
-    background: linear-gradient(to bottom, rgb(89, 92, 252), rgb(226, 57, 241));
-    animation: rotate 1s infinite linear;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1),
+    10px 10px 10px rgba(0, 0, 0, 0.4),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+    inset 10px 10px 10px rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+    -225deg,
+    #ff7402 0%,
+    #ffe700 50%,
+    #fff55e 100%
+  );
+  mask: radial-gradient(
+    circle,
+    transparent 100px,   /* 120px diameter → radius = 60px */
+    black 62px          /* soft edge for a clean ring cut */
+  );
 }
+
 /* @keyframes rotate {
 
     100% {
