@@ -12,9 +12,12 @@ body {
     border-radius: 50%;
     background-color: lightgrey;
     box-shadow: 20px 5px 20px gray;
-    margin: 300px 0 0 300px;
+    margin: 200px 0 0 500px;
 }
 .panel{
+    
+}
+div img{
     background-color: white;
     opacity: 0.8;
     border-radius: 10px;
