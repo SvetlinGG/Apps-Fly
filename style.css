@@ -31,18 +31,8 @@ body {
   );
 }
 
-/* @keyframes rotate {
-
-    100% {
-      transform: rotate(360deg);
-    }
-  } */
 .panel{
-    /* background-color: white;
-    opacity: 0.8;
-    border-radius: 10px;
-    background-color: rgb(180, 180, 180);
-    box-shadow: 20px 5px 20px gray; */
+    
 }
 .img{
     background-color: white;
