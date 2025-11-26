@@ -1,30 +1,62 @@
 body {
     background-image: url('/public/abstract-background.jpg');
     margin: 0;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0;
     min-height: 100vh;
+}
+
+.desktop {
+    display: flex;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.desktop-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 200px;
+}
+
+.desktop-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80px;
+}
+
+.desktop-icon img {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+.desktop-icon span {
+    margin-top: 5px;
+    font-size: 11px;
+    color: #333;
+    font-weight: 500;
 }
 
 .big-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
 .middle-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
     height: 600px;
     width: 600px;
     border-radius: 50%;
     background-color: lightgrey;
     box-shadow: 20px 5px 20px gray;
-    flex-wrap: wrap;
-    position: relative;
 }
 
 .app-icon {
@@ -58,11 +90,3 @@ body {
 .app-icon:nth-child(3) { bottom: 100px; right: 120px; }
 .app-icon:nth-child(4) { bottom: 100px; left: 120px; }
 .app-icon:nth-child(5) { top: 180px; left: 80px; }
-
-.panel {
-    background-color: white;
-    opacity: 0.8;
-    border-radius: 10px;
-    background-color: rgb(180, 180, 180);
-    box-shadow: 20px 5px 20px gray;
-}
