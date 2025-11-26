@@ -52,8 +52,8 @@ body {
 
 .middle-container {
     position: relative;
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 500px;
     border-radius: 50%;
     background-color: lightgrey;
     box-shadow: 20px 5px 20px gray;
@@ -72,7 +72,8 @@ body {
 .app-icon img {
     width: 60px;
     height: 60px;
-    background-color: white;
+    background-color: rgb(215, 212, 212);
+    opacity: 0.8;
     border-radius: 15px;
     padding: 10px;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
