@@ -38,7 +38,8 @@ body {
 }
 
 .panel:hover {
-  transform: scale(1.1);
+  transform: scale(1.6);
+  z-index: 10;
 }
 
 .center-text {
@@ -64,40 +65,31 @@ body {
 }
 
 
-.ring-container:has(#apple-store:checked) .app-name[data-app="apple-store"] { display: block; }
-.ring-container:has(#apple-tv:checked) .app-name[data-app="apple-tv"] { display: block; }
-.ring-container:has(#camera:checked) .app-name[data-app="camera"] { display: block; }
-.ring-container:has(#chrome:checked) .app-name[data-app="chrome"] { display: block; }
-.ring-container:has(#clock:checked) .app-name[data-app="clock"] { display: block; }
-.ring-container:has(#cloud:checked) .app-name[data-app="cloud"] { display: block; }
-.ring-container:has(#facebook:checked) .app-name[data-app="facebook"] { display: block; }
-.ring-container:has(#files:checked) .app-name[data-app="files"] { display: block; }
-.ring-container:has(#google:checked) .app-name[data-app="google"] { display: block; }
-.ring-container:has(#messenger:checked) .app-name[data-app="messenger"] { display: block; }
-.ring-container:has(#message:checked) .app-name[data-app="message"] { display: block; }
-.ring-container:has(#netflix:checked) .app-name[data-app="netflix"] { display: block; }
-.ring-container:has(#notebook:checked) .app-name[data-app="notebook"] { display: block; }
-.ring-container:has(#phone:checked) .app-name[data-app="phone"] { display: block; }
-.ring-container:has(#photo:checked) .app-name[data-app="photo"] { display: block; }
-.ring-container:has(#safari:checked) .app-name[data-app="safari"] { display: block; }
-.ring-container:has(#spotify:checked) .app-name[data-app="spotify"] { display: block; }
-.ring-container:has(#twitter:checked) .app-name[data-app="twitter"] { display: block; }
-.ring-container:has(#video:checked) .app-name[data-app="video"] { display: block; }
-.ring-container:has(#whatsapp:checked) .app-name[data-app="whatsapp"] { display: block; }
-.ring-container:has(#youtube:checked) .app-name[data-app="youtube"] { display: block; }
+.ring-container:has(label[for="apple-store"]:hover) .app-name[data-app="apple-store"] { display: block; }
+.ring-container:has(label[for="apple-tv"]:hover) .app-name[data-app="apple-tv"] { display: block; }
+.ring-container:has(label[for="camera"]:hover) .app-name[data-app="camera"] { display: block; }
+.ring-container:has(label[for="chrome"]:hover) .app-name[data-app="chrome"] { display: block; }
+.ring-container:has(label[for="clock"]:hover) .app-name[data-app="clock"] { display: block; }
+.ring-container:has(label[for="cloud"]:hover) .app-name[data-app="cloud"] { display: block; }
+.ring-container:has(label[for="facebook"]:hover) .app-name[data-app="facebook"] { display: block; }
+.ring-container:has(label[for="files"]:hover) .app-name[data-app="files"] { display: block; }
+.ring-container:has(label[for="google"]:hover) .app-name[data-app="google"] { display: block; }
+.ring-container:has(label[for="messenger"]:hover) .app-name[data-app="messenger"] { display: block; }
+.ring-container:has(label[for="message"]:hover) .app-name[data-app="message"] { display: block; }
+.ring-container:has(label[for="netflix"]:hover) .app-name[data-app="netflix"] { display: block; }
+.ring-container:has(label[for="notebook"]:hover) .app-name[data-app="notebook"] { display: block; }
+.ring-container:has(label[for="phone"]:hover) .app-name[data-app="phone"] { display: block; }
+.ring-container:has(label[for="photo"]:hover) .app-name[data-app="photo"] { display: block; }
+.ring-container:has(label[for="safari"]:hover) .app-name[data-app="safari"] { display: block; }
+.ring-container:has(label[for="spotify"]:hover) .app-name[data-app="spotify"] { display: block; }
+.ring-container:has(label[for="twitter"]:hover) .app-name[data-app="twitter"] { display: block; }
+.ring-container:has(label[for="video"]:hover) .app-name[data-app="video"] { display: block; }
+.ring-container:has(label[for="whatsapp"]:hover) .app-name[data-app="whatsapp"] { display: block; }
+.ring-container:has(label[for="youtube"]:hover) .app-name[data-app="youtube"] { display: block; }
 
 
-.ring-container:has(.app-radio:checked) .default-text {
+.ring-container:has(.panel:hover) .default-text {
   display: none;
-}
-
-
-.app-radio:checked + .panel {
-  transform: scale(1.2);
-}
-
-.app-radio:checked + .panel img {
-  box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
 }
   
 .panel img {
