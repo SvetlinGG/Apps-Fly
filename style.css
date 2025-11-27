@@ -10,7 +10,7 @@ body {
 }
   
 
-.ring {
+.small-container {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -27,20 +27,36 @@ body {
   
   
 .panel {
-    position: absolute;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70px;
+  height: 90px;
+  transform-origin: center -140px; /* разстояние от центъра */
+  text-align: center;
+  color: white;
+    /* position: absolute;
     width: 70px;
     height: 70px;
     left: 50%;
     top: 50%;
-    transform-origin: center -90px; 
+    transform-origin: center -90px;  */
 }
   
 .panel img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 5px;
+    /* width: 100%;
+    height: 100%; */
     transform: rotate(calc(-1 * var(--angle)));
-  }
+}
+.panel p{
+    font-size: 14px;
+    display: block;
+}
   
 
 .p1 { --angle: 0deg transform: rotate(0deg); }
