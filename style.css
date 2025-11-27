@@ -1,7 +1,59 @@
 body {
     background-image: url('/public/abstract-background.jpg');
 }
-.big-container {
+.ring-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 250px auto;
+}
+  
+
+.ring {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #d7d4d4;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1),
+    10px 10px 10px rgba(0, 0, 0, 0.4),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+    inset 10px 10px 10px rgba(0, 0, 0, 0.4);
+    /* box-shadow:
+      -5px -5px 5px rgba(255, 255, 255, 0.1),
+      10px 10px 10px rgba(214, 211, 211, 0.4),
+      inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+      inset 10px 10px 10px rgba(183, 181, 181, 0.4); */
+  
+
+    mask: radial-gradient(circle,
+          transparent 60px,  
+            gray 62px);
+}
+  
+  
+.panel {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 50%;
+    top: 50%;
+    transform-origin: center -90px; 
+}
+  
+.panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: rotate(calc(-1 * var(--angle)));
+  }
+  
+
+.p1 { --angle: 0deg transform: rotate(0deg); }
+.p2 { --angle: 120deg transform: rotate(120deg); }
+.p3 { --angle: 240deg transform: rotate(240deg); }
+  
+/* .big-container {
     
 }
 .middle-container{
@@ -12,7 +64,7 @@ body {
     border-radius: 50%;
     background-color: lightgrey;
     /* box-shadow: 20px 5px 20px gray; */
-    box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94, 104, 121, 0.137);
+    /* box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94, 104, 121, 0.137);
     margin: 200px 0 0 500px;
     box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.1),
     10px 10px 10px rgba(0, 0, 0, 0.4),
@@ -24,19 +76,27 @@ body {
     #ffe700 50%,
     #fff55e 100%
   );
-  /* mask: radial-gradient(
-    circle,
-    transparent 100px,   
-    black 62px          
-  ); */
+    transform-style: preserve-3d;
+ 
+} */ 
+/* .middle-container .panel:nth-child(1) {
+    transform: rotate(0deg) translate(0, -140px) rotate(0deg);
 }
+  
+.middle-container .panel:nth-child(2) {
+    transform: rotate(120deg) translate(0, -140px) rotate(-120deg);
+}
+  
+.middle-container .panel:nth-child(3) {
+    transform: rotate(240deg) translate(0, -140px) rotate(-240deg);
+} */
 
-.img{
+/* .img{
     background-color: white;
     opacity: 0.8;
     border-radius: 10px;
     background-color: rgb(180, 180, 180);
     box-shadow: 20px 5px 20px gray;
-    
-}
+    transform-style: preserve-3d;
+} */
 
