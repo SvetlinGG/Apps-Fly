@@ -6,7 +6,7 @@ body {
     position: relative;
     width: 300px;
     height: 300px;
-    margin: 250px auto;
+    margin: 350px auto;
 }
   
 
@@ -28,24 +28,22 @@ body {
   
 .panel {
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 40%;
+  top: 73%;
   width: 70px;
   height: 90px;
-  transform-origin: center -140px; /* разстояние от центъра */
+  transform-origin: center -70px;
   text-align: center;
   color: white;
-    /* position: absolute;
-    width: 70px;
-    height: 70px;
-    left: 50%;
-    top: 50%;
-    transform-origin: center -90px;  */
 }
   
 .panel img {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
+  border:1px solid lightgrey;
+  border-radius: 10px;
+  background-color: rgb(193, 190, 190);
+  box-shadow: 8px 5px 5px rgba(174, 174, 174, 0.5);
   object-fit: contain;
   display: block;
   margin: 0 auto 5px;
@@ -59,6 +57,22 @@ body {
 }
   
 
-.p1 { --angle: 0deg transform: rotate(0deg); }
-.p2 { --angle: 120deg transform: rotate(120deg); }
-.p3 { --angle: 240deg transform: rotate(240deg); }
+.p1 { --angle: 0deg; transform: rotate(0deg); }
+.p2 { --angle: 17deg; transform: rotate(17deg); }
+.p3 { --angle: 34deg; transform: rotate(34deg); }
+.p4 { --angle: 51deg; transform: rotate(51deg); }
+.p5 { --angle: 68deg; transform: rotate(68deg); }
+.p6 { --angle: 85deg; transform: rotate(85deg); }
+.p7 { --angle: 102deg; transform: rotate(102deg); }
+.p8 { --angle: 119deg; transform: rotate(119deg); }
+.p9 { --angle: 136deg; transform: rotate(136deg); }
+.p10 { --angle: 153deg; transform: rotate(153deg); }
+.p11 { --angle: 170deg; transform: rotate(170deg); }
+.p12 { --angle: 187deg; transform: rotate(187deg); }
+.p13 { --angle: 204deg; transform: rotate(204deg); }
+.p14 { --angle: 221deg; transform: rotate(221deg); }
+.p15 { --angle: 238deg; transform: rotate(238deg); }
+.p16 { --angle: 255deg; transform: rotate(255deg); }
+.p17 { --angle: 272deg; transform: rotate(272deg); }
+.p18 { --angle: 289deg; transform: rotate(289deg); }
+.p19 { --angle: 307deg; transform: rotate(307deg); }
