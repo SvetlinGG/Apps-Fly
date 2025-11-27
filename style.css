@@ -51,8 +51,53 @@ body {
   color: #333;
 }
 
-.panel:hover + .center-text::after {
-  content: attr(data-name);
+.app-radio {
+  display: none;
+}
+
+.app-name {
+  display: none;
+}
+
+.default-text {
+  display: block;
+}
+
+
+.ring-container:has(#apple-store:checked) .app-name[data-app="apple-store"] { display: block; }
+.ring-container:has(#apple-tv:checked) .app-name[data-app="apple-tv"] { display: block; }
+.ring-container:has(#camera:checked) .app-name[data-app="camera"] { display: block; }
+.ring-container:has(#chrome:checked) .app-name[data-app="chrome"] { display: block; }
+.ring-container:has(#clock:checked) .app-name[data-app="clock"] { display: block; }
+.ring-container:has(#cloud:checked) .app-name[data-app="cloud"] { display: block; }
+.ring-container:has(#facebook:checked) .app-name[data-app="facebook"] { display: block; }
+.ring-container:has(#files:checked) .app-name[data-app="files"] { display: block; }
+.ring-container:has(#google:checked) .app-name[data-app="google"] { display: block; }
+.ring-container:has(#messenger:checked) .app-name[data-app="messenger"] { display: block; }
+.ring-container:has(#message:checked) .app-name[data-app="message"] { display: block; }
+.ring-container:has(#netflix:checked) .app-name[data-app="netflix"] { display: block; }
+.ring-container:has(#notebook:checked) .app-name[data-app="notebook"] { display: block; }
+.ring-container:has(#phone:checked) .app-name[data-app="phone"] { display: block; }
+.ring-container:has(#photo:checked) .app-name[data-app="photo"] { display: block; }
+.ring-container:has(#safari:checked) .app-name[data-app="safari"] { display: block; }
+.ring-container:has(#spotify:checked) .app-name[data-app="spotify"] { display: block; }
+.ring-container:has(#twitter:checked) .app-name[data-app="twitter"] { display: block; }
+.ring-container:has(#video:checked) .app-name[data-app="video"] { display: block; }
+.ring-container:has(#whatsapp:checked) .app-name[data-app="whatsapp"] { display: block; }
+.ring-container:has(#youtube:checked) .app-name[data-app="youtube"] { display: block; }
+
+
+.ring-container:has(.app-radio:checked) .default-text {
+  display: none;
+}
+
+
+.app-radio:checked + .panel {
+  transform: scale(1.2);
+}
+
+.app-radio:checked + .panel img {
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
 }
   
 .panel img {
@@ -66,28 +111,28 @@ body {
   display: block;
 }
 
-/* Trigonometric positioning for 21 icons */
-.panel:nth-child(3) { --x: 120; --y: 0; }
-.panel:nth-child(4) { --x: 114; --y: 37; }
-.panel:nth-child(5) { --x: 97; --y: 71; }
-.panel:nth-child(6) { --x: 71; --y: 97; }
-.panel:nth-child(7) { --x: 37; --y: 114; }
-.panel:nth-child(8) { --x: 0; --y: 120; }
-.panel:nth-child(9) { --x: -37; --y: 114; }
-.panel:nth-child(10) { --x: -71; --y: 97; }
-.panel:nth-child(11) { --x: -97; --y: 71; }
-.panel:nth-child(12) { --x: -114; --y: 37; }
-.panel:nth-child(13) { --x: -120; --y: 0; }
-.panel:nth-child(14) { --x: -114; --y: -37; }
-.panel:nth-child(15) { --x: -97; --y: -71; }
-.panel:nth-child(16) { --x: -71; --y: -97; }
-.panel:nth-child(17) { --x: -37; --y: -114; }
-.panel:nth-child(18) { --x: 0; --y: -120; }
-.panel:nth-child(19) { --x: 37; --y: -114; }
-.panel:nth-child(20) { --x: 71; --y: -97; }
-.panel:nth-child(21) { --x: 97; --y: -71; }
-.panel:nth-child(22) { --x: 114; --y: -37; }
-.panel:nth-child(23) { --x: 120; --y: 0; }
+
+label.panel:nth-of-type(1) { --x: 120; --y: 0; }
+label.panel:nth-of-type(2) { --x: 114; --y: 37; }
+label.panel:nth-of-type(3) { --x: 97; --y: 71; }
+label.panel:nth-of-type(4) { --x: 71; --y: 97; }
+label.panel:nth-of-type(5) { --x: 37; --y: 114; }
+label.panel:nth-of-type(6) { --x: 0; --y: 120; }
+label.panel:nth-of-type(7) { --x: -37; --y: 114; }
+label.panel:nth-of-type(8) { --x: -71; --y: 97; }
+label.panel:nth-of-type(9) { --x: -97; --y: 71; }
+label.panel:nth-of-type(10) { --x: -114; --y: 37; }
+label.panel:nth-of-type(11) { --x: -120; --y: 0; }
+label.panel:nth-of-type(12) { --x: -114; --y: -37; }
+label.panel:nth-of-type(13) { --x: -97; --y: -71; }
+label.panel:nth-of-type(14) { --x: -71; --y: -97; }
+label.panel:nth-of-type(15) { --x: -37; --y: -114; }
+label.panel:nth-of-type(16) { --x: 0; --y: -120; }
+label.panel:nth-of-type(17) { --x: 37; --y: -114; }
+label.panel:nth-of-type(18) { --x: 71; --y: -97; }
+label.panel:nth-of-type(19) { --x: 97; --y: -71; }
+label.panel:nth-of-type(20) { --x: 114; --y: -37; }
+label.panel:nth-of-type(21) { --x: 120; --y: 0; }
   
 
 
