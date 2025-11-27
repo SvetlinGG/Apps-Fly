@@ -28,14 +28,31 @@ body {
   
 .panel {
   position: absolute;
-  left: 50%;
-  top: 90%;
-  width: 70px;
-  height: 90px;
-  transform-origin: center -90px;
+  width: 60px;
+  height: 60px;
   text-align: center;
-  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  left: calc(50% + var(--x) * 1px - 30px);
+  top: calc(50% + var(--y) * 1px - 30px);
+}
+
+.panel:hover {
+  transform: scale(1.1);
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.panel:hover + .center-text::after {
+  content: attr(data-name);
 }
   
 .panel img {
@@ -47,30 +64,30 @@ body {
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
   object-fit: contain;
   display: block;
-  margin: 0 auto 5px;
-  transform: rotate(calc(-1 * var(--angle)));
 }
-.panel p{
-    font-size: 14px;
-    display: block;
-}
+
+/* Trigonometric positioning for 21 icons */
+.panel:nth-child(3) { --x: 120; --y: 0; }
+.panel:nth-child(4) { --x: 114; --y: 37; }
+.panel:nth-child(5) { --x: 97; --y: 71; }
+.panel:nth-child(6) { --x: 71; --y: 97; }
+.panel:nth-child(7) { --x: 37; --y: 114; }
+.panel:nth-child(8) { --x: 0; --y: 120; }
+.panel:nth-child(9) { --x: -37; --y: 114; }
+.panel:nth-child(10) { --x: -71; --y: 97; }
+.panel:nth-child(11) { --x: -97; --y: 71; }
+.panel:nth-child(12) { --x: -114; --y: 37; }
+.panel:nth-child(13) { --x: -120; --y: 0; }
+.panel:nth-child(14) { --x: -114; --y: -37; }
+.panel:nth-child(15) { --x: -97; --y: -71; }
+.panel:nth-child(16) { --x: -71; --y: -97; }
+.panel:nth-child(17) { --x: -37; --y: -114; }
+.panel:nth-child(18) { --x: 0; --y: -120; }
+.panel:nth-child(19) { --x: 37; --y: -114; }
+.panel:nth-child(20) { --x: 71; --y: -97; }
+.panel:nth-child(21) { --x: 97; --y: -71; }
+.panel:nth-child(22) { --x: 114; --y: -37; }
+.panel:nth-child(23) { --x: 120; --y: 0; }
   
 
-.p1 { --angle: 0deg; transform: translate(-50%, -50%) rotate(0deg); }
-.p2 { --angle: 20deg; transform: translate(-50%, -50%) rotate(20deg); }
-.p3 { --angle: 40deg; transform: translate(-50%, -50%) rotate(40deg); }
-.p4 { --angle: 60deg; transform: translate(-50%, -50%) rotate(60deg); }
-.p5 { --angle: 80deg; transform: translate(-50%, -50%) rotate(80deg); }
-.p6 { --angle: 100deg; transform: translate(-50%, -50%) rotate(100deg); }
-.p7 { --angle: 120deg; transform: translate(-50%, -50%) rotate(120deg); }
-.p8 { --angle: 140deg; transform: translate(-50%, -50%) rotate(140deg); }
-.p9 { --angle: 160deg; transform: translate(-50%, -50%) rotate(160deg); }
-.p10 { --angle: 180deg; transform: translate(-50%, -50%) rotate(180deg); }
-.p11 { --angle: 200deg; transform: translate(-50%, -50%) rotate(200deg); }
-.p12 { --angle: 220deg; transform: translate(-50%, -50%) rotate(220deg); }
-.p13 { --angle: 240deg; transform: translate(-50%, -50%) rotate(240deg); }
-.p14 { --angle: 260deg; transform: translate(-50%, -50%) rotate(260deg); }
-.p15 { --angle: 280deg; transform: translate(-50%, -50%) rotate(280deg); }
-.p16 { --angle: 300deg; transform: translate(-50%, -50%) rotate(300deg); }
-.p17 { --angle: 320deg; transform: translate(-50%, -50%) rotate(320deg); }
-.p18 { --angle: 340deg; transform: translate(-50%, -50%) rotate(340deg); }
+
