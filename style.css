@@ -2,12 +2,7 @@ body {
     background-image: url('/public/abstract-background.jpg');
 }
 
-.ring-container {
-    position: relative;
-    width: 350px;
-    height: 350px;
-    margin: 300px auto;
-}
+
   
 
 .small-container {
@@ -26,6 +21,13 @@ body {
 }
   
   
+.ring-container {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  margin: 300px auto;
+}
+
 .panel {
   position: absolute;
   width: 60px;
@@ -33,25 +35,33 @@ body {
   text-align: center;
   cursor: pointer;
   transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-delay: 0.5s;
   left: calc(50% + var(--x) * 1px - 30px);
   top: calc(50% + var(--y) * 1px - 30px);
 }
 
 .panel:hover {
+  transition-delay: 0s;
+}
+
+.panel:hover {
   transform: scale(1.6) translate(calc(var(--dx) * 75px), calc(var(--dy) * 75px));
   z-index: 10;
+  transition-delay: 0s;
 }
 
 /* Adjacent icons move 1cm (37.8px) */
 .panel:hover + .panel,
 .panel:has(+ .panel:hover) {
   transform: translate(calc(var(--dx) * 37.8px), calc(var(--dy) * 37.8px));
+  transition-delay: 0s;
 }
 
 /* Second adjacent icons move 0.5cm (18.9px) */
 .panel:hover + .panel + .panel,
 .panel:has(+ .panel + .panel:hover) {
   transform: translate(calc(var(--dx) * 18.9px), calc(var(--dy) * 18.9px));
+  transition-delay: 0s;
 }
 
 .center-text {
