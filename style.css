@@ -50,14 +50,14 @@ body {
   transition-delay: 0s;
 }
 
-/* Adjacent icons move 1cm (37.8px) */
+
 .panel:hover + .panel,
 .panel:has(+ .panel:hover) {
   transform: translate(calc(var(--dx) * 37.8px), calc(var(--dy) * 37.8px));
   transition-delay: 0s;
 }
 
-/* Second adjacent icons move 0.5cm (18.9px) */
+
 .panel:hover + .panel + .panel,
 .panel:has(+ .panel + .panel:hover) {
   transform: translate(calc(var(--dx) * 18.9px), calc(var(--dy) * 18.9px));
